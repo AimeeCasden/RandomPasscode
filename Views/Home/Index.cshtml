@@ -1,0 +1,32 @@
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h2{
+            text-align: center;
+        }
+        h4{
+            text-align: center;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Passcode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <form action="generate" method="post">
+    <h4>Random Passcode (passcode #@ViewBag.Counter)</h2>
+    <p>@ViewBag.Pigeons</p>
+     <button><a href="/generate">Generate</a></button>
+    <!-- <p><input type='submit' value='Generate'></p> -->
+
+    <a href="/reset">Reset</a>
+</form>
+
+    
+</body>
+</html>
